@@ -1,0 +1,3002 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace final1102040WPAA
+{
+    public partial class OOXX : Form
+    {
+        int x = 0;
+        bool a = false;
+        bool b = false;
+
+        int p1 = 0;
+        int p2 = 0;
+        int p3 = 0;
+        int p4 = 0;
+        int p5 = 0;
+        int p6 = 0;
+        int p7 = 0;
+        int p8 = 0;
+        int p9 = 0;
+
+        int P1 = 0;
+        int P2 = 0;
+        int P3 = 0;
+        int P4 = 0;
+        int P5 = 0;
+        int P6 = 0;
+        int P7 = 0;
+        int P8 = 0;
+        int P9 = 0;
+        public OOXX()
+        {
+            InitializeComponent();
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if(pictureBox1.BackColor==Color.White &&  b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox1.BackColor = Color.Blue;
+                    P1 = P1 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox1.BackColor = Color.Red; 
+                    p1 = p1 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox1.BackColor = Color.Blue;
+                    P1 = P1 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox1.BackColor = Color.Blue;
+                    P1 = P1 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox1.BackColor = Color.Blue;
+                    P1 = P1 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                }
+                x += 1;
+            }
+            //---------------------------------------------------
+            if (pictureBox1.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                    if(pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                if (x == 2)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                if(x == 4)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                if (x == 6)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                if (x == 8)
+                {
+                    pictureBox1.BackColor = Color.Red;
+                    p1 = p1 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                x += 2;
+            }
+            //----------------------------------------------------------------
+            if ( pictureBox1.BackColor != Color.White)
+            {
+                if(p1 + p2 + p3 ==3 || p1 + p4 + p7 == 3 || p1 +p5 + p9 == 3 )
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled= false;
+                    pictureBox2.Enabled= false;
+                    pictureBox3.Enabled= false;
+                    pictureBox4.Enabled= false;
+                    pictureBox5.Enabled= false;
+                    pictureBox6.Enabled= false;
+                    pictureBox7.Enabled= false;
+                    pictureBox8.Enabled= false;
+                    pictureBox9.Enabled= false;
+                }
+                else if (P1 + P2 + P3 == 6 || P1 + P4 + P7 == 6 || P1 + P5 + P9 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (pictureBox2.BackColor == Color.White && b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox2.BackColor = Color.Blue;
+                    P2 = P2 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox2.BackColor = Color.Blue;
+                    P2 = P2 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox2.BackColor = Color.Blue;
+                    P2 = P2 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox2.BackColor = Color.Blue;
+                    P2 = P2 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                }
+                x += 1;
+            }
+            //---------------------------------------------------------------------------
+            if (pictureBox2.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 2)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+               
+                if (x == 4)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 6)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 8)
+                {
+                    pictureBox2.BackColor = Color.Red;
+                    p2 = p2 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                x += 2;
+            }
+            //----------------------------------------------------------------------------------------
+            if (pictureBox2.BackColor != Color.White)
+            {
+                if (p1 + p2 + p3 == 3 || p2 + p5 + p8 == 3)
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (P1 + P2 + P3 == 6 || P2 + P5 + P8 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (pictureBox3.BackColor == Color.White && b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox3.BackColor = Color.Blue;
+                    P3 = P3 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox3.BackColor = Color.Blue;
+                    P3 = P3 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox3.BackColor = Color.Blue;
+                    P3 = P3 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox3.BackColor = Color.Blue;
+                    P3 = P3 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                }
+                x += 1;
+            }
+            //------------------------------------------------------------------------------
+            if (pictureBox3.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 2)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 4)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 6)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+               
+                if (x == 8)
+                {
+                    pictureBox3.BackColor = Color.Red;
+                    p3 = p3 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                x += 2;
+            }
+            //----------------------------------------------------------------------------------------------
+            if (pictureBox3.BackColor != Color.White)
+            {
+                if (p1 + p2 + p3 == 3 || p3 + p6 + p9 == 3 || p3 + p5 + p7 == 3)
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (P1 + P2 + P3 == 6 || P3 + P6 + P9 == 6 || P3 + P5 + P7 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            if (pictureBox8.BackColor == Color.White && b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox8.BackColor = Color.Blue;
+                    P8 = P8 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox8.BackColor = Color.Blue;
+                    P8 = P8 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox8.BackColor = Color.Blue;
+                    P8 = P8 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox8.BackColor = Color.Blue;
+                    P8 = P8 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                }
+                x += 1;
+            }
+            //-----------------------------------------------------------------------------------------
+            if (pictureBox8.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 2)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 4)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 6)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 8)
+                {
+                    pictureBox8.BackColor = Color.Red;
+                    p8 = p8 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                x += 2;
+            }
+            //-------------------------------------------------------------------------------------------------
+            if (pictureBox8.BackColor != Color.White)
+            {
+                if (p2 + p5 + p8 == 3 || p7 + p8 + p9 == 3)
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (P2 + P5 + P8 == 6 || P7 + P8 + P9 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            if (pictureBox7.BackColor == Color.White && b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox7.BackColor = Color.Blue;
+                    P7 = P7 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox7.BackColor = Color.Blue;
+                    P7 = P7 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox7.BackColor = Color.Blue;
+                    P7 = P7 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox7.BackColor = Color.Blue;
+                    P7 = P7 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                }
+                x += 1;
+            }
+            //------------------------------------------------------------------------
+            if (pictureBox7.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3+ 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 2)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+               
+                if (x == 4)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                
+                if (x == 6)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+               
+                if (x == 8)
+                {
+                    pictureBox7.BackColor = Color.Red;
+                    p7 = p7 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                }
+                x += 2;
+            }
+            //----------------------------------------------------------------------------
+            if (pictureBox7.BackColor != Color.White)
+            {
+                if (p7 + p5 + p3 == 3 || p7 + p8 + p9 == 3 || p7 + p4 + p1 == 3)
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (P7 + P5 + P3 == 6 || P7 + P8 + P9 == 6 || P7 + P4 + P1 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            if (pictureBox6.BackColor == Color.White && b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox6.BackColor = Color.Blue;
+                    P6 = P6 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox6.BackColor = Color.Blue;
+                    P6 = P6 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox6.BackColor = Color.Blue;
+                    P6 = P6 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox6.BackColor = Color.Blue;
+                    P6 = P6 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                }
+                x += 1;
+            }
+            //-----------------------------------------------------------------------------------
+            if (pictureBox6.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 2)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+               
+                if (x == 4)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 6)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 8)
+                {
+                    pictureBox6.BackColor = Color.Red;
+                    p6 = p6 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                x += 2;
+            }
+            //-----------------------------------------------------------------------------------
+            if (pictureBox6.BackColor != Color.White)
+            {
+                if (p3 + p6 + p9 == 3 || p4 + p5 + p6 == 3)
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (P3 + P6 + P9 == 6 || P4 + P5 + P6 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (pictureBox5.BackColor == Color.White && b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox5.BackColor = Color.Blue;
+                    P5 = P5 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox5.BackColor = Color.Blue;
+                    P5 = P5 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox5.BackColor = Color.Blue;
+                    P5 = P5 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox5.BackColor = Color.Blue;
+                    P5 = P5 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                }
+                x += 1;
+            }
+            //------------------------------------------------------------------------------------
+            if (pictureBox5.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                    if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 2)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                    if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 4)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                    if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 6)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                    if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 8)
+                {
+                    pictureBox5.BackColor = Color.Red;
+                    p5 = p5 + 1;
+                    if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                x += 2;
+            }
+            //----------------------------------------------------------------------------------------------
+            if (pictureBox5.BackColor != Color.White)
+            {
+                if (p1 + p5 + p9 == 3 || p3 + p5 + p8 == 3 || p3 + p4 + p5 == 3 || p2 + p5 + p7 == 3)
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (P1 + P5 + P9 == 6 || P3 + P5 + P8 == 6 || P3 + P4 + P5 == 6 || P2 + P5 + P7 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (pictureBox4.BackColor == Color.White && b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox4.BackColor = Color.Blue;
+                    P4 = P4 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox4.BackColor = Color.Blue;
+                    P4 = P4 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox4.BackColor = Color.Blue;
+                    P4 = P4 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox4.BackColor = Color.Blue;
+                    P4 = P4 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1;
+                }
+                x += 1;
+            }
+            //-----------------------------------------------------------------------------
+            if (pictureBox4.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 2)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1; if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 4)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1; if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 6)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1; if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                
+                if (x == 8)
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    p4 = p4 + 1; if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox9.BackColor == Color.White)
+                    {
+                        pictureBox9.BackColor = Color.Blue;
+                        P9 = P9 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                }
+                x += 2;
+            }
+
+            //---------------------------------------------------------------------------------
+            if (pictureBox4.BackColor != Color.White)
+            {
+                if (p1 + p4 + p7 == 3 || p4 + p5 + p6 == 3)
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (P1 + P4 + P7 == 6 || P4 + P5 + P6 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            if (pictureBox9.BackColor == Color.White && b == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                }
+                if (x == 1)
+                {
+                    pictureBox9.BackColor = Color.Blue;
+                    P9 = P9 + 2;
+                }
+                if (x == 2)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                }
+                if (x == 3)
+                {
+                    pictureBox9.BackColor = Color.Blue;
+                    P9 = P9 + 2;
+                }
+                if (x == 4)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                }
+                if (x == 5)
+                {
+                    pictureBox9.BackColor = Color.Blue;
+                    P9 = P9 + 2;
+                }
+                if (x == 6)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                }
+                if (x == 7)
+                {
+                    pictureBox9.BackColor = Color.Blue;
+                    P9 = P9 + 2;
+                }
+                if (x == 8)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                }
+                x += 1;
+            }
+            //-----------------------------------------------------------------------
+            if (pictureBox9.BackColor == Color.White && a == true)
+            {
+                if (x == 0)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1; 
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                }
+                
+                if (x == 2)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                }
+               
+                if (x == 4)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                }
+               
+                if (x == 6)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                }
+                
+                if (x == 8)
+                {
+                    pictureBox9.BackColor = Color.Red;
+                    p9 = p9 + 1;
+                    if (pictureBox5.BackColor == Color.White)
+                    {
+                        pictureBox5.BackColor = Color.Blue;
+                        P5 = P5 + 2;
+                    }
+                    else if (pictureBox7.BackColor == Color.White)
+                    {
+                        pictureBox7.BackColor = Color.Blue;
+                        P7 = P7 + 2;
+                    }
+                    else if (pictureBox1.BackColor == Color.White)
+                    {
+                        pictureBox1.BackColor = Color.Blue;
+                        P1 = P1 + 2;
+                    }
+                    else if (pictureBox3.BackColor == Color.White)
+                    {
+                        pictureBox3.BackColor = Color.Blue;
+                        P3 = P3 + 2;
+                    }
+                    else if (pictureBox6.BackColor == Color.White)
+                    {
+                        pictureBox6.BackColor = Color.Blue;
+                        P6 = P6 + 2;
+                    }
+                    else if (pictureBox8.BackColor == Color.White)
+                    {
+                        pictureBox8.BackColor = Color.Blue;
+                        P8 = P8 + 2;
+                    }
+                    else if (pictureBox2.BackColor == Color.White)
+                    {
+                        pictureBox2.BackColor = Color.Blue;
+                        P2 = P2 + 2;
+                    }
+                    else if (pictureBox4.BackColor == Color.White)
+                    {
+                        pictureBox4.BackColor = Color.Blue;
+                        P4 = P4 + 2;
+                    }
+                }
+                x += 2;
+            }
+            //-----------------------------------------------------------------------
+            if (pictureBox9.BackColor != Color.White)
+            {
+                if (p1 + p5 + p9 == 3 || p3 + p6 + p9 == 3 || p7 + p8 + p9 == 3)
+                {
+                    MessageBox.Show("紅色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (P1 + P5 + P9 == 6 || P3 + P6 + P9 == 6 || P7 + P8 + P9 == 6)
+                {
+                    MessageBox.Show("藍色勝");
+                    pictureBox1.Enabled = false;
+                    pictureBox2.Enabled = false;
+                    pictureBox3.Enabled = false;
+                    pictureBox4.Enabled = false;
+                    pictureBox5.Enabled = false;
+                    pictureBox6.Enabled = false;
+                    pictureBox7.Enabled = false;
+                    pictureBox8.Enabled = false;
+                    pictureBox9.Enabled = false;
+                }
+                else if (pictureBox1.BackColor != Color.White && pictureBox2.BackColor != Color.White && pictureBox3.BackColor != Color.White && pictureBox4.BackColor != Color.White && pictureBox5.BackColor != Color.White && pictureBox6.BackColor != Color.White && pictureBox7.BackColor != Color.White && pictureBox8.BackColor != Color.White && pictureBox9.BackColor != Color.White)
+                {
+                    MessageBox.Show("平手");
+                }
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            a = true;
+            pictureBox1.Enabled = true;
+            pictureBox2.Enabled = true;
+            pictureBox3.Enabled = true;
+            pictureBox4.Enabled = true;
+            pictureBox5.Enabled = true;
+            pictureBox6.Enabled = true;
+            pictureBox7.Enabled = true;
+            pictureBox8.Enabled = true;
+            pictureBox9.Enabled = true;
+            MessageBox.Show("單人對戰已開始");
+            button1.Enabled = false;
+            button2.Enabled = false;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            b = true;
+            pictureBox1.Enabled = true;
+            pictureBox2.Enabled = true;
+            pictureBox3.Enabled = true;
+            pictureBox4.Enabled = true;
+            pictureBox5.Enabled = true;
+            pictureBox6.Enabled = true;
+            pictureBox7.Enabled = true;
+            pictureBox8.Enabled = true;
+            pictureBox9.Enabled = true;
+            MessageBox.Show("雙人對戰已開始");
+            button2.Enabled = false;
+            button1.Enabled = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            button2.Enabled = true;
+            b = false;
+            a = false;
+            pictureBox1.BackColor = Color.White;
+            pictureBox2.BackColor = Color.White;
+            pictureBox3.BackColor = Color.White;
+            pictureBox4.BackColor = Color.White;
+            pictureBox5.BackColor = Color.White;
+            pictureBox6.BackColor = Color.White;
+            pictureBox7.BackColor = Color.White;
+            pictureBox8.BackColor = Color.White;
+            pictureBox9.BackColor = Color.White;
+
+            x = 0;
+
+            p1 = 0;
+            p2 = 0;
+            p3 = 0;
+            p4 = 0;
+            p5 = 0;
+            p6 = 0;
+            p7 = 0;
+            p8 = 0;
+            p9 = 0;
+
+            P1 = 0;
+            P2 = 0;
+            P3 = 0;
+            P4 = 0;
+            P5 = 0;
+            P6 = 0;
+            P7 = 0;
+            P8 = 0;
+            P9 = 0;
+        }
+
+        private void OOXX_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
