@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Net.Security;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace final1102040WPAA
+{
+    public partial class runracing : Form
+    {
+        int x = 130;
+        int y = 130;
+        int i = 1;
+        int j = 1;
+        public runracing()
+        {
+            InitializeComponent();
+        }
+
+
+
+     
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            y += 15;
+            pictureBox2.Location = new Point(y, 448);
+            j += 1;
+            if (y >= 900)
+            {
+                timer1.Stop();
+                MessageBox.Show("遊戲結束，兔子勝");
+            }
+            
+             if (x >= 900)
+            {
+                timer1.Stop();
+                MessageBox.Show("遊戲結束，烏龜勝");
+            }
+
+        }
+        private void runracing_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            button1.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            x += 10;
+            pictureBox1.Location = new Point(x, 403);
+            i += 1;
+        }
+    }
+}
