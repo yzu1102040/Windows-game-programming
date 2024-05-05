@@ -1,0 +1,115 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Security.Permissions;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace final1102040WPAA
+{
+    public partial class Form2 : Form
+    {
+        int i, num, count;
+        int x = 10;
+        Color onColor = Color.Coral; // 將onColor的顏色設為咖啡色
+        Color offColor = Color.Yellow; // 將offColor的顏色設為黃色
+        Button[] Buttons = new Button[9]; //儲存按鈕的陣列(陣列第一個元素沒有用到)
+        int[] btnState = new int[9]; //紀錄每個按鈕的狀態(陣列第一個元素沒有用到)
+        Random r = new Random();
+        public Form2()
+        {
+            InitializeComponent();
+        }
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            Buttons[1] = button1;
+            Buttons[2] = button2;
+            Buttons[3] = button3;
+            Buttons[4] = button4;
+            Buttons[5] = button5;
+            Buttons[6] = button6;
+            Buttons[7] = button7;
+            Buttons[8] = button8;
+
+            for (i = 1; i < 9; i++)
+            {
+                Buttons[i].BackColor = offColor;
+            }
+            textBox2.Text = "剩餘秒數:" + x;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            x--;
+            textBox2.Text = "剩餘秒數:" + x;
+            num = r.Next(1, 9);
+            btnState[num] = 1; //隨機設定每個按鍵的狀態 (0代表關，1代表開)
+            for ( i = 1; i < 9; i++)
+            {
+                Buttons[i].BackColor = offColor; //若按鍵狀態為開則按鍵顯示黃色
+            }
+
+            if (btnState[num] == 1) Buttons[num].BackColor = onColor; //若按鍵狀態為開則按鍵顯示咖啡色
+           if(x<=0)
+            {
+                timer1.Stop();
+                MessageBox.Show("遊戲結束");
+                button10.Enabled = true;
+                for (i = 1; i < 9; i++)
+                {
+                    Buttons[i].Enabled = false;
+                    Buttons[i].BackColor = offColor;
+                }
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            for (i = 1; i < 9; i++)
+            {
+                Buttons[i].Enabled = true;
+            }
+
+            count = 0;
+            button9.Enabled = false; //將開始鍵無效化
+            button10.Enabled = false; //有效化結束鍵
+        }
+
+
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            Button btnHit = (Button)sender;
+            int X = int.Parse(btnHit.Text);
+            if (X > 0)
+            {
+                if (Buttons[X].BackColor == onColor) // 只有當按鈕背景色為咖啡色時才增加 count
+                {
+                    count++;
+                    textBox1.Text = "分數:" + count.ToString();
+                    Buttons[X].BackColor = offColor;
+                }
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            for (i = 1; i < 9; i++)
+            {
+                Buttons[i].Enabled = true;
+            }
+            x = 10;
+            count = 0; //
+            textBox1.Text = "分數:" + count.ToString();
+            button9.Enabled = false; //將開始鍵無效化
+            button10.Enabled = false; //有效化結束鍵
+        }
+    }
+}
